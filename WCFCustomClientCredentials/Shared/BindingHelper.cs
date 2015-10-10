@@ -13,6 +13,7 @@
             };
 
             var messageSecurity = new SymmetricSecurityBindingElement();
+			messageSecurity.EndpointSupportingTokenParameters.SignedEncrypted.Add(new EchoTokenParameters());
 
             var x509ProtectionParameters = new X509SecurityTokenParameters
             {
